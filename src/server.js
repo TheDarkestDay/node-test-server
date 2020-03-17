@@ -13,6 +13,7 @@ server.use(bodyParser.json());
 server.post('/api/login', authRoutes.login);
 server.post('/api/logout', authRoutes.logout);
 server.use('/api', authRoutes.isAuthorized);
+server.use('/api/whoami', authRoutes.whoAmI);
 server.use('/api', router);
 
 server.listen(PORT, function() {
