@@ -47,15 +47,19 @@ function login(req, res, next) {
     }
 
     if(!isValidUser(login, password)) {
-        res.sendStatus(400);
+        res.status(400).json({
+            message: 'Wrong login or password'
+        });
         return;
     }
 
     const newSessionToken = uuidV1();
     authorizedUsers[login] = newSessionToken;
+
     res.set(sessionTokenName, newSessionToken);
-    res.sendStatus(200);
+    res.status(200).json({token: newSessionToken});
 }
+
 function logout(req, res, next) {
     const login = req.body.login;
     const sessionToken = req.headers[sessionTokenName];
@@ -68,18 +72,36 @@ function logout(req, res, next) {
     delete authorizedUsers[login];
     res.sendStatus(200);
 }
+
 function isAuthorized(req, res, next) {
     const sessionToken = req.headers[sessionTokenName];
 
     if (sessionToken && checkTokenAuth(sessionToken)) {
         next();
     } else {
-        res.sendStatus(401);
+        res.status(401).json({
+            message: 'Access denied'
+        });
     }
+}
+
+function whoAmI(req, res, next) {
+    const sessionToken = req.headers[sessionTokenName];
+    const login = Object.keys(authorizedUsers).find((name) => authorizedUsers[name] === sessionToken);
+
+    const userInfo = {
+        ...dbData.users.find((user) => user.login === login)
+    };
+    userInfo.role = dbData.roles.find((role) => role.id === userInfo.roleId);
+
+    delete userInfo.password;
+
+    res.status(200).json(userInfo);
 }
 
 module.exports = {
     login: login,
     logout: logout,
-    isAuthorized: isAuthorized
+    isAuthorized: isAuthorized,
+    whoAmI: whoAmI,
 };

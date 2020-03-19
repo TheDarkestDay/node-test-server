@@ -1,0 +1,340 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "login": "frank",
+      "password": "frank123",
+      "roleId": 0
+    },
+    {
+      "id": 1,
+      "login": "stan",
+      "password": "stan123",
+      "roleId": 1
+    }
+  ],
+  "roles": [
+    {
+      "id": 0,
+      "name": "Admin"
+    },
+    {
+      "id": 1,
+      "name": "User"
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "Active wear"
+    },
+    {
+      "id": 1,
+      "name": "Jeans"
+    },
+    {
+      "id": 2,
+      "name": "Coats"
+    },
+    {
+      "id": 3,
+      "name": "Sweaters"
+    },
+    {
+      "id": 4,
+      "name": "Wear to work"
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "categoryId": 0,
+      "image": "https://images.pexels.com/photos/179909/pexels-photo-179909.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Active wear Lorem Ipsum 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 47.78,
+      "rating": 4,
+      "gender": "Man",
+      "count": 50,
+      "soldCount": 50
+    },
+    {
+      "id": 1,
+      "categoryId": 0,
+      "image": "https://images.pexels.com/photos/285171/pexels-photo-285171.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Active wear Lorem Ipsum 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 53.99,
+      "rating": 3,
+      "gender": "Man",
+      "count": 10,
+      "soldCount": 0
+    },
+    {
+      "id": 3,
+      "categoryId": 0,
+      "image": "https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Active wear Lorem Ipsum 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 37.99,
+      "rating": 0,
+      "gender": "Woman",
+      "count": 5,
+      "soldCount": 0
+    },
+    {
+      "id": 4,
+      "categoryId": 0,
+      "image": "https://images.pexels.com/photos/47401/pexels-photo-47401.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Active wear Lorem Ipsum 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 24.99,
+      "rating": 2,
+      "gender": "Woman",
+      "count": 0,
+      "soldCount": 0
+    },
+    {
+      "id": 10,
+      "categoryId": 1,
+      "image": "https://images.pexels.com/photos/25641/pexels-photo-25641.jpg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Jeans Lorem Ipsum 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 117.99,
+      "rating": 4,
+      "gender": "Man",
+      "count": 10,
+      "soldCount": 0
+    },
+    {
+      "id": 11,
+      "categoryId": 1,
+      "image": "https://images.pexels.com/photos/198747/pexels-photo-198747.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Jeans Lorem Ipsum 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 137.99,
+      "rating": 5,
+      "gender": "Man",
+      "count": 5,
+      "soldCount": 0
+    },
+    {
+      "id": 12,
+      "categoryId": 1,
+      "image": "data:image/jpeg;base64,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",
+      "name": "Ma name",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 357.99,
+      "rating": 2,
+      "gender": "Unisex",
+      "count": 30,
+      "soldCount": 0,
+      "category": {
+        "id": 1,
+        "name": "Jeans"
+      }
+    },
+    {
+      "id": 13,
+      "categoryId": 1,
+      "image": "https://anninc.scene7.com/is/image/LO/530844_0934?$pdp2x$",
+      "name": "NEW JEANS",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 277.99,
+      "rating": 3,
+      "gender": "Woman",
+      "count": 10,
+      "soldCount": 0,
+      "category": {
+        "id": 1,
+        "name": "Jeans"
+      }
+    },
+    {
+      "id": 14,
+      "categoryId": 1,
+      "image": "https://images.pexels.com/photos/24155/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Jeans Lorem Ipsum 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 752.99,
+      "rating": 5,
+      "gender": "Woman",
+      "count": 10,
+      "soldCount": 0
+    },
+    {
+      "id": 20,
+      "categoryId": 2,
+      "image": "https://images.pexels.com/photos/24156/pexels-photo-24156.jpg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Coats Lorem Ipsum 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 523.99,
+      "rating": 2,
+      "gender": "Man",
+      "count": 5,
+      "soldCount": 0
+    },
+    {
+      "id": 21,
+      "categoryId": 2,
+      "image": "https://images.pexels.com/photos/94731/pexels-photo-94731.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Coats Lorem Ipsum 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 409.99,
+      "rating": 1,
+      "gender": "Man",
+      "count": 20,
+      "soldCount": 0
+    },
+    {
+      "id": 23,
+      "categoryId": 2,
+      "image": "https://images.pexels.com/photos/24257/pexels-photo-24257.jpg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Coats Lorem Ipsum 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 672.99,
+      "rating": 3,
+      "gender": "Woman",
+      "count": 10,
+      "soldCount": 0
+    },
+    {
+      "id": 24,
+      "categoryId": 2,
+      "image": "https://images.pexels.com/photos/26067/pexels-photo-26067.jpg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Coats Lorem Ipsum 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 852.99,
+      "rating": 4,
+      "gender": "Woman",
+      "count": 5,
+      "soldCount": 0
+    },
+    {
+      "id": 30,
+      "categoryId": 3,
+      "image": "https://images.pexels.com/photos/94777/pexels-photo-94777.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Sweaters Lorem Ipsum 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 62.99,
+      "rating": 2,
+      "gender": "Man",
+      "count": 10,
+      "soldCount": 0
+    },
+    {
+      "id": 31,
+      "categoryId": 3,
+      "image": "https://images.pexels.com/photos/4156/fashion-woman-model-portrait.jpg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Sweaters Lorem Ipsum 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 92.99,
+      "rating": 3,
+      "gender": "Man",
+      "count": 30,
+      "soldCount": 0
+    },
+    {
+      "id": 33,
+      "categoryId": 3,
+      "image": "https://images.pexels.com/photos/157888/fashion-glasses-go-pro-female-157888.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Sweaters Lorem Ipsum 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 28.99,
+      "rating": 4,
+      "gender": "Woman",
+      "count": 10,
+      "soldCount": 0
+    },
+    {
+      "id": 34,
+      "categoryId": 3,
+      "image": "https://images.pexels.com/photos/63953/pexels-photo-63953.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Sweaters Lorem Ipsum 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 512.99,
+      "rating": 0,
+      "gender": "Woman",
+      "count": 10,
+      "soldCount": 0
+    },
+    {
+      "id": 40,
+      "categoryId": 4,
+      "image": "https://images.pexels.com/photos/169729/pexels-photo-169729.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Wear to work Lorem Ipsum 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 89.99,
+      "rating": 3,
+      "gender": "Man",
+      "count": 5,
+      "soldCount": 0
+    },
+    {
+      "id": 41,
+      "categoryId": 4,
+      "image": "https://images.pexels.com/photos/216983/pexels-photo-216983.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Wear to work Lorem Ipsum 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero enim, sollicitudin a elit vel, dapibus pellentesque nunc. Phasellus ac rutrum massa. Vivamus non nulla lobortis augue ullamcorper congue.",
+      "cost": 261.99,
+      "rating": 2,
+      "gender": "Man",
+      "count": 10,
+      "soldCount": 10
+    },
+    {
+      "id": 43,
+      "categoryId": 4,
+      "image": "https://images.pexels.com/photos/24272/pexels-photo-24272.jpg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Wear to work Lorem Ipsum 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 173.99,
+      "rating": 5,
+      "gender": "Woman",
+      "count": 5,
+      "soldCount": 0
+    },
+    {
+      "id": 44,
+      "categoryId": 4,
+      "image": "https://images.pexels.com/photos/108061/pexels-photo-108061.jpeg?h=350&auto=compress&cs=tinysrgb",
+      "name": "Wear to work Lorem Ipsum 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "cost": 527.99,
+      "rating": 4,
+      "gender": "Woman",
+      "count": 5,
+      "soldCount": 0
+    },
+    {
+      "name": "Man coat",
+      "categoryId": 2,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim ligula a mauris cursus congue. Sed eu lorem libero. Sed fermentum ipsum nec tellus bibendum mollis. Mauris placerat varius ex eget bibendum. Duis consectetur enim vitae condimentum scelerisque. Quisque consequat metus at quam euismod, sit amet maximus ligula convallis. Donec ultrices odio quis odio scelerisque congue. Aenean mi est, pharetra id congue a, consequat vel quam.\n\nUt ultricies ligula non aliquam molestie. Cras vel finibus sem, ut fermentum tortor. Donec porta urna nec scelerisque pretium. Morbi est enim, ultrices luctus accumsan varius, facilisis eget lacus. Morbi pellentesque orci at metus eleifend varius. Vestibulum auctor tortor eu orci fringilla convallis. Curabitur quis arcu vel est ornare blandit eu ac purus. Morbi sit amet augue efficitur, hendrerit magna non, dapibus leo. Curabitur lacus sem, varius nec leo sed, luctus malesuada neque.",
+      "gender": "Man",
+      "cost": "500",
+      "image": "https://www.emp-shop.pl/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw6e2e9200/images/3/6/4/3/364381a-emp.jpg?sw=350&sh=400&sm=fit&sfrm=png",
+      "rating": 4,
+      "id": 45
+    },
+    {
+      "name": "Sweater for lady",
+      "categoryId": 3,
+      "description": "Ut quis massa posuere, malesuada risus sed, pharetra magna. Vivamus malesuada, mi nec fermentum rhoncus, turpis magna efficitur enim, id ornare lectus sem in nisl. Cras nisl orci, convallis sit amet ante sit amet, interdum molestie erat. Duis ac semper arcu, quis viverra est. Praesent pharetra hendrerit turpis, et interdum risus maximus at. Vestibulum vel laoreet metus, et aliquet quam. Sed a justo id magna commodo rhoncus. Proin et orci ut mauris porta faucibus vel ut sapien. Proin facilisis nisl sed faucibus cursus. Nullam quis iaculis sem. Nulla blandit vehicula imperdiet. Integer bibendum nisi lorem, sit amet suscipit magna ullamcorper nec.",
+      "gender": "Woman",
+      "cost": "56",
+      "image": "https://pix.bonprix.pl/imgc/0/0/1/9/2/9/3/7/3/4/_640/19293734/sweter-w-norweski-wzor.jpg",
+      "rating": 3,
+      "id": 46
+    },
+    {
+      "name": "So active wear",
+      "categoryId": 0,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut turpis vitae metus suscipit pretium. Nullam pretium mauris non laoreet hendrerit. Nam ultrices id neque non egestas. Nunc placerat vitae enim vitae lobortis. Vivamus lorem turpis, cursus sit amet hendrerit non, posuere sed dolor. Nullam sem dolor, tempus vel porttitor eget, molestie vitae mauris. Mauris mattis dolor id purus lobortis, id bibendum felis hendrerit. Suspendisse potenti.\n\nIn sit amet laoreet nisl. Vestibulum mollis elit eu nisi hendrerit, eu ullamcorper lacus facilisis. Duis eu dui nisl. Suspendisse potenti. Sed cursus hendrerit elit eu vulputate. Praesent semper rhoncus tellus, a mollis enim. Praesent porta, nulla in efficitur rhoncus, neque lectus suscipit est, efficitur lacinia tellus odio vel magna. Curabitur velit sapien, malesuada eget mi a, dictum sodales lorem. Cras pretium mauris velit, ac posuere massa tincidunt eu. Vestibulum luctus quam nisl, a vehicula est vulputate ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;",
+      "gender": "Unisex",
+      "cost": "550",
+      "image": "https://image.ceneostatic.pl/data/products/58469667/i-blooming-marvellous-active-wear-grey-panelled-vest.jpg",
+      "rating": 4,
+      "id": 47
+    }
+  ]
+}
